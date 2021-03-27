@@ -8,6 +8,10 @@ const uri = "mongodb+srv://emazonserver:HKs7NostxB7oIENu@cluster0.rmnsf.mongodb.
 // require('dotenv').config;
 const port = 5000 ;
 
+app.get('/' , (req , res)=> {
+  req.send("Hello I am db and its working!");
+})
+
 // use for middleware purpose we have to capture request
 app.use(bodyParser.json())
 app.use(cors());
